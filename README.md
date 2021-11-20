@@ -13,9 +13,7 @@ Collab link: https://colab.research.google.com/drive/1LZq1cBZlutuho6HNUHVSbywkJf
 
 3.) wget testing images
 
-4.)run command:
-  
-  python detect.py --source [test image directory] --save-txt  --save-conf --nosave --weights [path to best.pt] --conf 0.05
+4.) run command:   python detect.py --source [test image directory] --save-txt  --save-conf --nosave --weights [path to best.pt] --conf 0.05
 
 5.) Run python inference.py, that's all. No other modification needed. 
 
