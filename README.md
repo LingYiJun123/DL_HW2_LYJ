@@ -15,7 +15,7 @@ Collab link: https://colab.research.google.com/drive/1LZq1cBZlutuho6HNUHVSbywkJf
 
 4.) run command:   python detect.py --source [test image directory] --save-txt  --save-conf --nosave --weights [path to best.pt] --conf 0.05
 
-5.) run makejson.py (change yoloresultpath) to create answer.json. (Oh, before that, download the submission_readme file so the program would know the order of files to do detection)
+5.) run makejson.py (change yoloresultpath) to create answer.json. (Oh, before that, download the submission_readme file in the same directory as makejson.py so the program would know the order of files to do detection)
 
 
 # Getting best.pt
