@@ -1,0 +1,22 @@
+for i = 1:length(digitStruct)
+      fileID = digitStruct(i).name;
+      fileID = fileID(1:end-4);
+      fileID = string(fileID + ".txt");
+      fileopen = fopen(fileID,'w');
+      for j = 1:length(digitStruct(i).bbox)
+         a = digitStruct(i).bbox(j).height;
+         b = digitStruct(i).bbox(j).left;
+         c = digitStruct(i).bbox(j).top;
+         d = digitStruct(i).bbox(j).width;
+         label = digitStruct(i).bbox(j).label;
+	 if label ==10
+	    label = 0;
+	    end
+         yolox = b + (d/2);
+	 yoloy = c + (a/2);
+         width = d;
+         height = a;
+         fprintf(fileopen, string(label) + " " + yolox + " " + yoloy + " " + width + " " + height + "\n");
+	end
+	fclose('all')
+	end
